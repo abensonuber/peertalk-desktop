@@ -7,7 +7,7 @@
 
 #define kExpandAnimationTime 1.0f
 
-#define kExpandAnimationXOrigin 32
+#define kExpandAnimationXOrigin 44
 #define kExpandAnimationYOrigin 2
 #define kExpandAnimationHeight 764
 #define kExpandAnimationWidth 1078
