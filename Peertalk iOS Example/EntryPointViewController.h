@@ -10,5 +10,15 @@
 @property (weak, nonatomic) IBOutlet UIImageView *secondDotImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *headphonesImageView;
 @property (weak, nonatomic) IBOutlet UILabel *headphonesLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *firstBackgroundImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *secondBackgroundImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *fourthGridControllerImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *fifthHandImageView;
+@property (weak, nonatomic) IBOutlet UILabel *holdAndDragLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *sixthScreenGrid;
+@property (weak, nonatomic) IBOutlet UILabel *sixthScreenLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *signupBackgroundImageView;
+@property (weak, nonatomic) IBOutlet UILabel *signupInUnderLabel;
+@property (weak, nonatomic) IBOutlet UILabel *signupArrowLabel;
 
 @end

@@ -69,6 +69,7 @@
 		C8B6294D1FA9528C007BF6EA /* ClanProForUBER-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629201FA949DD007BF6EA /* ClanProForUBER-Thin.ttf */; };
 		C8B6294E1FA9528C007BF6EA /* ClanProForUBER-ThinNarrow.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629231FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.otf */; };
 		C8B6294F1FA9528C007BF6EA /* ClanProForUBER-ThinNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629251FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.ttf */; };
+		C8B629511FA98490007BF6EA /* 1st Grid Dark Dots.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629501FA98490007BF6EA /* 1st Grid Dark Dots.png */; };
 		EE158A761CBD3FF800A3E3F0 /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACFD2D4151D36220081ACF5 /* PTChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE158A771CBD3FF800A3E3F0 /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A88FA5C150D61DE00FC3647 /* PTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE158A781CBD3FF800A3E3F0 /* PTUSBHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A88FA5E150D61DE00FC3647 /* PTUSBHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -180,6 +181,7 @@
 		C8B629351FA94BDF007BF6EA /* 2nd screen - grid expanded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2nd screen - grid expanded.png"; sourceTree = "<group>"; };
 		C8B629361FA94BDF007BF6EA /* 6th screen - grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6th screen - grid.png"; sourceTree = "<group>"; };
 		C8B629371FA94BDF007BF6EA /* 1st screen - lit dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1st screen - lit dot.png"; sourceTree = "<group>"; };
+		C8B629501FA98490007BF6EA /* 1st Grid Dark Dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1st Grid Dark Dots.png"; sourceTree = "<group>"; };
 		EE158A5B1CBD3EB600A3E3F0 /* Peertalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Peertalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE158A681CBD3ED700A3E3F0 /* Peertalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Peertalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE158A7C1CBD402600A3E3F0 /* Peertalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peertalk.h; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 			children = (
 				C8B629301FA94BDF007BF6EA /* 1st screen - grid.png */,
 				C8B629371FA94BDF007BF6EA /* 1st screen - lit dot.png */,
+				C8B629501FA98490007BF6EA /* 1st Grid Dark Dots.png */,
 				C8B629351FA94BDF007BF6EA /* 2nd screen - grid expanded.png */,
 				C8B629341FA94BDF007BF6EA /* 3rd screen - headphones.png */,
 				C8B629331FA94BDF007BF6EA /* 4th screen - grid controller.png */,
@@ -640,6 +643,7 @@
 				C8B629401FA9528C007BF6EA /* ClanProForUBER-Book.otf in Resources */,
 				C8B629411FA9528C007BF6EA /* ClanProForUBER-Book.ttf in Resources */,
 				C8B629421FA9528C007BF6EA /* ClanProForUBER-BookNarrow.otf in Resources */,
+				C8B629511FA98490007BF6EA /* 1st Grid Dark Dots.png in Resources */,
 				C8B629431FA9528C007BF6EA /* ClanProForUBER-BookNarrow.ttf in Resources */,
 				C8B629441FA9528C007BF6EA /* ClanProForUBER-Medium.otf in Resources */,
 				C8B629451FA9528C007BF6EA /* ClanProForUBER-Medium.ttf in Resources */,
