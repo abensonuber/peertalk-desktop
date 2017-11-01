@@ -70,6 +70,7 @@
 		C8B6294E1FA9528C007BF6EA /* ClanProForUBER-ThinNarrow.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629231FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.otf */; };
 		C8B6294F1FA9528C007BF6EA /* ClanProForUBER-ThinNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629251FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.ttf */; };
 		C8B629511FA98490007BF6EA /* 1st Grid Dark Dots.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629501FA98490007BF6EA /* 1st Grid Dark Dots.png */; };
+		C8B629531FA9ADE8007BF6EA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B629521FA9ADE8007BF6EA /* Constants.m */; };
 		EE158A761CBD3FF800A3E3F0 /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACFD2D4151D36220081ACF5 /* PTChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE158A771CBD3FF800A3E3F0 /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A88FA5C150D61DE00FC3647 /* PTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE158A781CBD3FF800A3E3F0 /* PTUSBHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A88FA5E150D61DE00FC3647 /* PTUSBHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -182,6 +183,8 @@
 		C8B629361FA94BDF007BF6EA /* 6th screen - grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6th screen - grid.png"; sourceTree = "<group>"; };
 		C8B629371FA94BDF007BF6EA /* 1st screen - lit dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1st screen - lit dot.png"; sourceTree = "<group>"; };
 		C8B629501FA98490007BF6EA /* 1st Grid Dark Dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1st Grid Dark Dots.png"; sourceTree = "<group>"; };
+		C8B629521FA9ADE8007BF6EA /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		C8B629541FA9ADEF007BF6EA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		EE158A5B1CBD3EB600A3E3F0 /* Peertalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Peertalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE158A681CBD3ED700A3E3F0 /* Peertalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Peertalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE158A7C1CBD402600A3E3F0 /* Peertalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peertalk.h; sourceTree = "<group>"; };
@@ -279,6 +282,8 @@
 				C8B6291D1FA90DAF007BF6EA /* EntryPointViewController.h */,
 				6A64AAFB1526050D0065BF86 /* PTViewController.h */,
 				6A64AAFC1526050D0065BF86 /* PTViewController.m */,
+				C8B629521FA9ADE8007BF6EA /* Constants.m */,
+				C8B629541FA9ADEF007BF6EA /* Constants.h */,
 				6A64AAF51526050D0065BF86 /* MainStoryboard_iPhone.storyboard */,
 				6A64AAF81526050D0065BF86 /* MainStoryboard_iPad.storyboard */,
 				6A64AAEA1526050D0065BF86 /* Supporting Files */,
@@ -718,6 +723,7 @@
 				6A64AAFD1526050D0065BF86 /* PTViewController.m in Sources */,
 				6A64AB0815260E5C0065BF86 /* PTChannel.m in Sources */,
 				C8B6291C1FA90D9D007BF6EA /* EntryPointViewController.m in Sources */,
+				C8B629531FA9ADE8007BF6EA /* Constants.m in Sources */,
 				6A64AB0915260E600065BF86 /* PTProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

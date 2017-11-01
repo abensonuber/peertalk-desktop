@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Peertalk iOS Example/PTViewController.m"
-            timestampString = "531192534.902167"
+            timestampString = "531214536.541303"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "-sendJsonDictionaryWithType:type:"
             landmarkType = "7">
          </BreakpointContent>
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Peertalk iOS Example/EntryPointViewController.m"
-            timestampString = "531213086.570055"
+            timestampString = "531214536.541389"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "-performBackgroundSlideAnimation"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Peertalk iOS Example/EntryPointViewController.m"
-            timestampString = "531213086.570608"
+            timestampString = "531214536.541907"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
             landmarkName = "-performBackgroundSlideAnimation"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Peertalk iOS Example/EntryPointViewController.m"
-            timestampString = "531213086.571026"
+            timestampString = "531214536.542312"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
+            startingLineNumber = "151"
+            endingLineNumber = "151"
             landmarkName = "-performBackgroundSlideAnimation"
             landmarkType = "7">
             <Locations>
@@ -102,46 +102,46 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Peertalk iOS Example/EntryPointViewController.m"
-            timestampString = "531213086.57143"
+            timestampString = "531214536.542712"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "296"
-            endingLineNumber = "296"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
             landmarkName = "-showSixthScreenDot"
             landmarkType = "7">
             <Locations>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "-[EntryPointViewController showSixthScreenDot]"
                   moduleName = "Peertalk iOS Example"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abenson/git-repos/peertalk-desktop/Peertalk%20iOS%20Example/EntryPointViewController.m"
-                  timestampString = "531213086.659396"
+                  timestampString = "531213910.584681"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "296"
-                  endingLineNumber = "296"
+                  startingLineNumber = "345"
+                  endingLineNumber = "345"
                   offsetFromSymbolStart = "392">
                </Location>
                <Location
-                  shouldBeEnabled = "Yes"
+                  shouldBeEnabled = "No"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "__46-[EntryPointViewController showSixthScreenDot]_block_invoke"
                   moduleName = "Peertalk iOS Example"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/abenson/git-repos/peertalk-desktop/Peertalk%20iOS%20Example/EntryPointViewController.m"
-                  timestampString = "531213086.661078"
+                  timestampString = "531213910.586482"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "297"
-                  endingLineNumber = "297"
+                  startingLineNumber = "346"
+                  endingLineNumber = "346"
                   offsetFromSymbolStart = "20">
                </Location>
             </Locations>
