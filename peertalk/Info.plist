@@ -4,6 +4,25 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>ClanProForUBER-Book.otf</string>
+		<string>ClanProForUBER-Book.ttf</string>
+		<string>ClanProForUBER-BookNarrow.otf</string>
+		<string>ClanProForUBER-BookNarrow.ttf</string>
+		<string>ClanProForUBER-Medium.otf</string>
+		<string>ClanProForUBER-Medium.ttf</string>
+		<string>ClanProForUBER-MediumNarrow.otf</string>
+		<string>ClanProForUBER-MediumNarrow.ttf</string>
+		<string>ClanProForUBER-News.otf</string>
+		<string>ClanProForUBER-News.ttf</string>
+		<string>ClanProForUBER-NewsNarrow.otf</string>
+		<string>ClanProForUBER-NewsNarrow.ttf</string>
+		<string>ClanProForUBER-Thin.otf</string>
+		<string>ClanProForUBER-Thin.ttf</string>
+		<string>ClanProForUBER-ThinNarrow.otf</string>
+		<string>ClanProForUBER-ThinNarrow.ttf</string>
+	</array>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

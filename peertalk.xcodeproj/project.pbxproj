@@ -44,6 +44,31 @@
 		6ACFD2D6151D36220081ACF5 /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACFD2D4151D36220081ACF5 /* PTChannel.h */; };
 		6ACFD2D7151D36220081ACF5 /* PTChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ACFD2D5151D36220081ACF5 /* PTChannel.m */; };
 		C8A708011F9EB415004879F1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A708001F9EB415004879F1 /* QuartzCore.framework */; };
+		C8B6291C1FA90D9D007BF6EA /* EntryPointViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B6291B1FA90D9D007BF6EA /* EntryPointViewController.m */; };
+		C8B629381FA94BDF007BF6EA /* 1st screen - grid.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629301FA94BDF007BF6EA /* 1st screen - grid.png */; };
+		C8B629391FA94BDF007BF6EA /* 4th screen - lit dot.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629311FA94BDF007BF6EA /* 4th screen - lit dot.png */; };
+		C8B6293A1FA94BDF007BF6EA /* 5th screen - hand.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629321FA94BDF007BF6EA /* 5th screen - hand.png */; };
+		C8B6293B1FA94BDF007BF6EA /* 4th screen - grid controller.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629331FA94BDF007BF6EA /* 4th screen - grid controller.png */; };
+		C8B6293C1FA94BDF007BF6EA /* 3rd screen - headphones.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629341FA94BDF007BF6EA /* 3rd screen - headphones.png */; };
+		C8B6293D1FA94BDF007BF6EA /* 2nd screen - grid expanded.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629351FA94BDF007BF6EA /* 2nd screen - grid expanded.png */; };
+		C8B6293E1FA94BDF007BF6EA /* 6th screen - grid.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629361FA94BDF007BF6EA /* 6th screen - grid.png */; };
+		C8B6293F1FA94BDF007BF6EA /* 1st screen - lit dot.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629371FA94BDF007BF6EA /* 1st screen - lit dot.png */; };
+		C8B629401FA9528C007BF6EA /* ClanProForUBER-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629241FA949DE007BF6EA /* ClanProForUBER-Book.otf */; };
+		C8B629411FA9528C007BF6EA /* ClanProForUBER-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629291FA949DF007BF6EA /* ClanProForUBER-Book.ttf */; };
+		C8B629421FA9528C007BF6EA /* ClanProForUBER-BookNarrow.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629261FA949DF007BF6EA /* ClanProForUBER-BookNarrow.otf */; };
+		C8B629431FA9528C007BF6EA /* ClanProForUBER-BookNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629211FA949DE007BF6EA /* ClanProForUBER-BookNarrow.ttf */; };
+		C8B629441FA9528C007BF6EA /* ClanProForUBER-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B6292B1FA949DF007BF6EA /* ClanProForUBER-Medium.otf */; };
+		C8B629451FA9528C007BF6EA /* ClanProForUBER-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B6292C1FA949E0007BF6EA /* ClanProForUBER-Medium.ttf */; };
+		C8B629461FA9528C007BF6EA /* ClanProForUBER-MediumNarrow.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B6291F1FA949DD007BF6EA /* ClanProForUBER-MediumNarrow.otf */; };
+		C8B629471FA9528C007BF6EA /* ClanProForUBER-MediumNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629271FA949DF007BF6EA /* ClanProForUBER-MediumNarrow.ttf */; };
+		C8B629481FA9528C007BF6EA /* ClanProForUBER-News.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B6292D1FA949E0007BF6EA /* ClanProForUBER-News.otf */; };
+		C8B629491FA9528C007BF6EA /* ClanProForUBER-News.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629281FA949DF007BF6EA /* ClanProForUBER-News.ttf */; };
+		C8B6294A1FA9528C007BF6EA /* ClanProForUBER-NewsNarrow.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B6292E1FA949E0007BF6EA /* ClanProForUBER-NewsNarrow.otf */; };
+		C8B6294B1FA9528C007BF6EA /* ClanProForUBER-NewsNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629221FA949DE007BF6EA /* ClanProForUBER-NewsNarrow.ttf */; };
+		C8B6294C1FA9528C007BF6EA /* ClanProForUBER-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B6292A1FA949DF007BF6EA /* ClanProForUBER-Thin.otf */; };
+		C8B6294D1FA9528C007BF6EA /* ClanProForUBER-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629201FA949DD007BF6EA /* ClanProForUBER-Thin.ttf */; };
+		C8B6294E1FA9528C007BF6EA /* ClanProForUBER-ThinNarrow.otf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629231FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.otf */; };
+		C8B6294F1FA9528C007BF6EA /* ClanProForUBER-ThinNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629251FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.ttf */; };
 		EE158A761CBD3FF800A3E3F0 /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACFD2D4151D36220081ACF5 /* PTChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE158A771CBD3FF800A3E3F0 /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A88FA5C150D61DE00FC3647 /* PTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE158A781CBD3FF800A3E3F0 /* PTUSBHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A88FA5E150D61DE00FC3647 /* PTUSBHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -129,6 +154,32 @@
 		6ACFD2D4151D36220081ACF5 /* PTChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTChannel.h; sourceTree = "<group>"; };
 		6ACFD2D5151D36220081ACF5 /* PTChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTChannel.m; sourceTree = "<group>"; };
 		C8A708001F9EB415004879F1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C8B6291B1FA90D9D007BF6EA /* EntryPointViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EntryPointViewController.m; sourceTree = "<group>"; };
+		C8B6291D1FA90DAF007BF6EA /* EntryPointViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryPointViewController.h; sourceTree = "<group>"; };
+		C8B6291F1FA949DD007BF6EA /* ClanProForUBER-MediumNarrow.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-MediumNarrow.otf"; sourceTree = "<group>"; };
+		C8B629201FA949DD007BF6EA /* ClanProForUBER-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-Thin.ttf"; sourceTree = "<group>"; };
+		C8B629211FA949DE007BF6EA /* ClanProForUBER-BookNarrow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-BookNarrow.ttf"; sourceTree = "<group>"; };
+		C8B629221FA949DE007BF6EA /* ClanProForUBER-NewsNarrow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-NewsNarrow.ttf"; sourceTree = "<group>"; };
+		C8B629231FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-ThinNarrow.otf"; sourceTree = "<group>"; };
+		C8B629241FA949DE007BF6EA /* ClanProForUBER-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-Book.otf"; sourceTree = "<group>"; };
+		C8B629251FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-ThinNarrow.ttf"; sourceTree = "<group>"; };
+		C8B629261FA949DF007BF6EA /* ClanProForUBER-BookNarrow.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-BookNarrow.otf"; sourceTree = "<group>"; };
+		C8B629271FA949DF007BF6EA /* ClanProForUBER-MediumNarrow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-MediumNarrow.ttf"; sourceTree = "<group>"; };
+		C8B629281FA949DF007BF6EA /* ClanProForUBER-News.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-News.ttf"; sourceTree = "<group>"; };
+		C8B629291FA949DF007BF6EA /* ClanProForUBER-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-Book.ttf"; sourceTree = "<group>"; };
+		C8B6292A1FA949DF007BF6EA /* ClanProForUBER-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-Thin.otf"; sourceTree = "<group>"; };
+		C8B6292B1FA949DF007BF6EA /* ClanProForUBER-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-Medium.otf"; sourceTree = "<group>"; };
+		C8B6292C1FA949E0007BF6EA /* ClanProForUBER-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-Medium.ttf"; sourceTree = "<group>"; };
+		C8B6292D1FA949E0007BF6EA /* ClanProForUBER-News.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-News.otf"; sourceTree = "<group>"; };
+		C8B6292E1FA949E0007BF6EA /* ClanProForUBER-NewsNarrow.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ClanProForUBER-NewsNarrow.otf"; sourceTree = "<group>"; };
+		C8B629301FA94BDF007BF6EA /* 1st screen - grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1st screen - grid.png"; sourceTree = "<group>"; };
+		C8B629311FA94BDF007BF6EA /* 4th screen - lit dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4th screen - lit dot.png"; sourceTree = "<group>"; };
+		C8B629321FA94BDF007BF6EA /* 5th screen - hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5th screen - hand.png"; sourceTree = "<group>"; };
+		C8B629331FA94BDF007BF6EA /* 4th screen - grid controller.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4th screen - grid controller.png"; sourceTree = "<group>"; };
+		C8B629341FA94BDF007BF6EA /* 3rd screen - headphones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3rd screen - headphones.png"; sourceTree = "<group>"; };
+		C8B629351FA94BDF007BF6EA /* 2nd screen - grid expanded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2nd screen - grid expanded.png"; sourceTree = "<group>"; };
+		C8B629361FA94BDF007BF6EA /* 6th screen - grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6th screen - grid.png"; sourceTree = "<group>"; };
+		C8B629371FA94BDF007BF6EA /* 1st screen - lit dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1st screen - lit dot.png"; sourceTree = "<group>"; };
 		EE158A5B1CBD3EB600A3E3F0 /* Peertalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Peertalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE158A681CBD3ED700A3E3F0 /* Peertalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Peertalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE158A7C1CBD402600A3E3F0 /* Peertalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peertalk.h; sourceTree = "<group>"; };
@@ -218,8 +269,12 @@
 		6A64AAE91526050D0065BF86 /* Peertalk iOS Example */ = {
 			isa = PBXGroup;
 			children = (
+				C8B6292F1FA94BD6007BF6EA /* images */,
+				C8B6291E1FA94923007BF6EA /* fonts */,
 				6A64AAF21526050D0065BF86 /* PTAppDelegate.h */,
 				6A64AAF31526050D0065BF86 /* PTAppDelegate.m */,
+				C8B6291B1FA90D9D007BF6EA /* EntryPointViewController.m */,
+				C8B6291D1FA90DAF007BF6EA /* EntryPointViewController.h */,
 				6A64AAFB1526050D0065BF86 /* PTViewController.h */,
 				6A64AAFC1526050D0065BF86 /* PTViewController.m */,
 				6A64AAF51526050D0065BF86 /* MainStoryboard_iPhone.storyboard */,
@@ -328,6 +383,44 @@
 				6A88FA4E150D613800FC3647 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C8B6291E1FA94923007BF6EA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C8B629241FA949DE007BF6EA /* ClanProForUBER-Book.otf */,
+				C8B629291FA949DF007BF6EA /* ClanProForUBER-Book.ttf */,
+				C8B629261FA949DF007BF6EA /* ClanProForUBER-BookNarrow.otf */,
+				C8B629211FA949DE007BF6EA /* ClanProForUBER-BookNarrow.ttf */,
+				C8B6292B1FA949DF007BF6EA /* ClanProForUBER-Medium.otf */,
+				C8B6292C1FA949E0007BF6EA /* ClanProForUBER-Medium.ttf */,
+				C8B6291F1FA949DD007BF6EA /* ClanProForUBER-MediumNarrow.otf */,
+				C8B629271FA949DF007BF6EA /* ClanProForUBER-MediumNarrow.ttf */,
+				C8B6292D1FA949E0007BF6EA /* ClanProForUBER-News.otf */,
+				C8B629281FA949DF007BF6EA /* ClanProForUBER-News.ttf */,
+				C8B6292E1FA949E0007BF6EA /* ClanProForUBER-NewsNarrow.otf */,
+				C8B629221FA949DE007BF6EA /* ClanProForUBER-NewsNarrow.ttf */,
+				C8B6292A1FA949DF007BF6EA /* ClanProForUBER-Thin.otf */,
+				C8B629201FA949DD007BF6EA /* ClanProForUBER-Thin.ttf */,
+				C8B629231FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.otf */,
+				C8B629251FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.ttf */,
+			);
+			name = fonts;
+			sourceTree = "<group>";
+		};
+		C8B6292F1FA94BD6007BF6EA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C8B629301FA94BDF007BF6EA /* 1st screen - grid.png */,
+				C8B629371FA94BDF007BF6EA /* 1st screen - lit dot.png */,
+				C8B629351FA94BDF007BF6EA /* 2nd screen - grid expanded.png */,
+				C8B629341FA94BDF007BF6EA /* 3rd screen - headphones.png */,
+				C8B629331FA94BDF007BF6EA /* 4th screen - grid controller.png */,
+				C8B629311FA94BDF007BF6EA /* 4th screen - lit dot.png */,
+				C8B629321FA94BDF007BF6EA /* 5th screen - hand.png */,
+				C8B629361FA94BDF007BF6EA /* 6th screen - grid.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,13 +637,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8B629401FA9528C007BF6EA /* ClanProForUBER-Book.otf in Resources */,
+				C8B629411FA9528C007BF6EA /* ClanProForUBER-Book.ttf in Resources */,
+				C8B629421FA9528C007BF6EA /* ClanProForUBER-BookNarrow.otf in Resources */,
+				C8B629431FA9528C007BF6EA /* ClanProForUBER-BookNarrow.ttf in Resources */,
+				C8B629441FA9528C007BF6EA /* ClanProForUBER-Medium.otf in Resources */,
+				C8B629451FA9528C007BF6EA /* ClanProForUBER-Medium.ttf in Resources */,
+				C8B629461FA9528C007BF6EA /* ClanProForUBER-MediumNarrow.otf in Resources */,
+				C8B629471FA9528C007BF6EA /* ClanProForUBER-MediumNarrow.ttf in Resources */,
+				C8B629481FA9528C007BF6EA /* ClanProForUBER-News.otf in Resources */,
+				C8B629491FA9528C007BF6EA /* ClanProForUBER-News.ttf in Resources */,
+				C8B6294A1FA9528C007BF6EA /* ClanProForUBER-NewsNarrow.otf in Resources */,
+				C8B6294B1FA9528C007BF6EA /* ClanProForUBER-NewsNarrow.ttf in Resources */,
+				C8B6294C1FA9528C007BF6EA /* ClanProForUBER-Thin.otf in Resources */,
+				C8B6294D1FA9528C007BF6EA /* ClanProForUBER-Thin.ttf in Resources */,
+				C8B6294E1FA9528C007BF6EA /* ClanProForUBER-ThinNarrow.otf in Resources */,
+				C8B6294F1FA9528C007BF6EA /* ClanProForUBER-ThinNarrow.ttf in Resources */,
+				C8B6293F1FA94BDF007BF6EA /* 1st screen - lit dot.png in Resources */,
 				6A64AAEE1526050D0065BF86 /* InfoPlist.strings in Resources */,
+				C8B6293A1FA94BDF007BF6EA /* 5th screen - hand.png in Resources */,
+				C8B6293B1FA94BDF007BF6EA /* 4th screen - grid controller.png in Resources */,
+				C8B629391FA94BDF007BF6EA /* 4th screen - lit dot.png in Resources */,
 				6A64AAF71526050D0065BF86 /* MainStoryboard_iPhone.storyboard in Resources */,
 				6A64AAFA1526050D0065BF86 /* MainStoryboard_iPad.storyboard in Resources */,
+				C8B629381FA94BDF007BF6EA /* 1st screen - grid.png in Resources */,
+				C8B6293C1FA94BDF007BF6EA /* 3rd screen - headphones.png in Resources */,
 				6A2E8E351527411E001B90E4 /* Default@2x.png in Resources */,
+				C8B6293E1FA94BDF007BF6EA /* 6th screen - grid.png in Resources */,
 				6A2E8E371527451D001B90E4 /* Icon-144@2x.png in Resources */,
 				6A2E8E39152745EF001B90E4 /* Icon-72.png in Resources */,
 				6A2E8E3B1527467E001B90E4 /* Icon-114@2x.png in Resources */,
+				C8B6293D1FA94BDF007BF6EA /* 2nd screen - grid expanded.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +713,7 @@
 				6A64AAF41526050D0065BF86 /* PTAppDelegate.m in Sources */,
 				6A64AAFD1526050D0065BF86 /* PTViewController.m in Sources */,
 				6A64AB0815260E5C0065BF86 /* PTChannel.m in Sources */,
+				C8B6291C1FA90D9D007BF6EA /* EntryPointViewController.m in Sources */,
 				6A64AB0915260E600065BF86 /* PTProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
