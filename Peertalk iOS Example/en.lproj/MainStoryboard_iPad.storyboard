@@ -97,7 +97,7 @@
                                 <rect key="frame" x="48.5" y="74.5" width="926.5" height="619"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="360 Driver Experience" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Yb-tz-UN9">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Uber 360 Experiences" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Yb-tz-UN9">
                                 <rect key="frame" x="102.5" y="265" width="490.5" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="45"/>
@@ -131,29 +131,29 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="4th screen - lit dot.png" id="N6c-6H-vLi">
-                                <rect key="frame" x="659" y="566.5" width="64" height="64"/>
+                                <rect key="frame" x="658" y="568" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="4th screen - grid controller.png" id="EDK-3q-pEj">
-                                <rect key="frame" x="402" y="422" width="576" height="353"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lower_grid_for_last_screen.png" id="EDK-3q-pEj">
+                                <rect key="frame" x="401" y="423" width="578" height="356"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="5th screen - hand.png" id="gA0-kt-JRk">
-                                <rect key="frame" x="640" y="515.5" width="71" height="67.5"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="white_hand.png" id="gA0-kt-JRk">
+                                <rect key="frame" x="648" y="642" width="71" height="67.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hold and drag to rotate the video" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nSU-jJ-3lV">
-                                <rect key="frame" x="572.5" y="594" width="227" height="59"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hold and drag to rotate the video" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nSU-jJ-3lV">
+                                <rect key="frame" x="504" y="708" width="380" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.46666666670000001" green="0.46666666670000001" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="6th screen - grid.png" id="ifl-I0-Ade">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="opaic_grid.png" id="ifl-I0-Ade">
                                 <rect key="frame" x="20" y="24" width="982" height="722"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Make up to $1,000/week working with us" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8o8-Cc-YzU">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Driver Experience" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8o8-Cc-YzU">
                                 <rect key="frame" x="112.5" y="170" width="583" height="134"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -180,6 +180,14 @@
                                 <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="group2.png" id="Dzf-91-9c9">
+                                <rect key="frame" x="636" y="544.5" width="110" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rightArrow.png" id="Ogu-eY-Qsz">
+                                <rect key="frame" x="799" y="437" width="17.5" height="11"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -194,12 +202,14 @@
                         <outlet property="headphonesImageView" destination="Rep-tS-Gqa" id="UsN-P1-HmK"/>
                         <outlet property="headphonesLabel" destination="Jxc-SC-o2I" id="VBh-NU-Uya"/>
                         <outlet property="holdAndDragLabel" destination="nSU-jJ-3lV" id="5Gj-a7-CM7"/>
+                        <outlet property="movementArrowsImageView" destination="Dzf-91-9c9" id="6br-sM-lwD"/>
                         <outlet property="secondBackgroundImageView" destination="5wj-09-F1q" id="Tyr-qT-mu4"/>
                         <outlet property="secondDotImageView" destination="N6c-6H-vLi" id="XoG-Cg-uxH"/>
                         <outlet property="secondGridImageView" destination="kOf-fU-b9y" id="tVg-Ww-GDg"/>
                         <outlet property="signupArrowLabel" destination="b9X-aJ-9TK" id="4pB-Le-oNs"/>
                         <outlet property="signupBackgroundImageView" destination="F6o-Tr-SEs" id="Kpq-Hy-tkp"/>
                         <outlet property="signupInUnderLabel" destination="lQQ-Ew-7di" id="tcw-Se-bLu"/>
+                        <outlet property="signupRightArrowImageView" destination="Ogu-eY-Qsz" id="NNp-lb-1Zi"/>
                         <outlet property="sixthScreenGrid" destination="ifl-I0-Ade" id="73x-Ut-vpp"/>
                         <outlet property="sixthScreenLabel" destination="8o8-Cc-YzU" id="qYw-vu-T9u"/>
                         <outlet property="tapToGetStartedLabel" destination="0dp-P7-dT6" id="eal-P8-tSx"/>
@@ -214,9 +224,11 @@
         <image name="1st screen - lit dot.png" width="132" height="132"/>
         <image name="2nd screen - grid expanded.png" width="1867" height="1438"/>
         <image name="3rd screen - headphones.png" width="136" height="135"/>
-        <image name="4th screen - grid controller.png" width="1152" height="580"/>
         <image name="4th screen - lit dot.png" width="132" height="132"/>
-        <image name="5th screen - hand.png" width="135" height="136"/>
-        <image name="6th screen - grid.png" width="1867" height="1438"/>
+        <image name="group2.png" width="129" height="127"/>
+        <image name="lower_grid_for_last_screen.png" width="1152" height="580"/>
+        <image name="opaic_grid.png" width="1867" height="1438"/>
+        <image name="rightArrow.png" width="17" height="11"/>
+        <image name="white_hand.png" width="135" height="135"/>
     </resources>
 </document>

@@ -14,7 +14,7 @@
 #define kExpandAnimationHeight 764
 #define kExpandAnimationWidth 1078
 
-#define kTimeInSecondsBetweenDotExpandsAndHeadphoneSlideIn 0.5f
+#define kTimeInSecondsBetweenDotExpandsAndHeadphoneSlideIn 0.1f
 
 #define kHeadphoneSlideAnimationTime 0.6f
 #define kHeadphoneSlideAnimationDistance 60
@@ -33,6 +33,9 @@
 #define kSixthScreenLabelSlideAnimationDistance 30
 #define kSixthScreenLabelSlideAnimationDuration .6f
 
+#define kJoystickMaxVerticalDistanceFromCenter 40
+#define kJoystickMaxHorizontalDistanceFromCenter 40
+
 @interface EntryPointViewController () {
     __weak PTChannel *serverChannel_;
     __weak PTChannel *peerChannel_;
@@ -47,7 +50,10 @@
 
 @property (nonatomic) bool animationSequenceInProcess;
 @property (nonatomic) bool animationCompleted;
+@property (nonatomic) bool movementAllowed;
 @property (strong, nonatomic) UIImage *serializedImageView;
+
+@property (nonatomic) CGRect initialMovementDotFrame;
 
 @end
 
@@ -71,7 +77,7 @@
                       range:NSMakeRange(18, 10)];
     [self.headphonesLabel setAttributedText:attString];
     
-    NSMutableAttributedString *holdAndDragAttributedString = [[NSMutableAttributedString alloc] initWithString:@"Hold and drag to\nrotate the video"];
+    NSMutableAttributedString *holdAndDragAttributedString = [[NSMutableAttributedString alloc] initWithString:@"Hold and drag to rotate the video"];
         [holdAndDragAttributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"ClanProForUBER-Medium" size:19.6f] range:NSMakeRange(0, 4)];
     [holdAndDragAttributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"ClanProForUBER-Book" size:19.6f] range:NSMakeRange(4, 5)];
     [holdAndDragAttributedString addAttribute:NSFontAttributeName value:[UIFont fontWithName:@"ClanProForUBER-Medium" size:19.6f] range:NSMakeRange(9, 4)];
@@ -103,7 +109,7 @@
         }
     }];
     
-    _circleRadius = 300;
+    _circleRadius = 200;
     _circleCenterPoint = CGPointMake(691, 598);
 
     // Draw the touch circle center.
@@ -120,6 +126,7 @@
         return;
     }
     self.animationSequenceInProcess = true;
+    self.initialMovementDotFrame = self.secondDotImageView.frame;
     [self fadeDotAndFadeOutDriverLabel];
 }
 
@@ -153,7 +160,7 @@
         [self.secondBackgroundImageView setFrame:CGRectMake(secondBackFrame.origin.x + secondBackFrame.size.width, secondBackFrame.origin.y, secondBackFrame.size.width, secondBackFrame.size.height)];
         [self.gridImageView setFrame:CGRectMake(kExpandAnimationXOrigin, kExpandAnimationYOrigin, kExpandAnimationWidth, kExpandAnimationHeight)];
         [self.gridImageView setImage:[UIImage imageNamed:@"1st Grid Dark Dots"]];
-    } completion:^(BOOL finished){
+    } completion:^(BOOL finished) {
         if (finished) {
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kTimeInSecondsBetweenDotExpandsAndHeadphoneSlideIn * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                  [self performHeadphoneSlideInAnimation];
@@ -191,7 +198,6 @@
     CGRect headphoneImageFrame = self.headphonesImageView.frame;
     CGRect headphoneLabelFrame = self.headphonesLabel.frame;
     [UIView animateWithDuration:kHeadphoneSlideAnimationTime animations:^{
-
         [self.headphonesImageView setFrame:CGRectMake(headphoneImageFrame.origin.x, headphoneImageFrame.origin.y - kHeadphoneSlideAnimationDistance, headphoneImageFrame.size.width, headphoneImageFrame.size.height)];
         [self.headphonesImageView setAlpha:0.0f];
         
@@ -202,10 +208,10 @@
             NSLog(@"Finished Headphone slide out");
         }
     }];
-    [self performLowerRightGridFadeInAnimation];
+    [self fadeInFinalBackground];
 }
 
-- (void)performLowerRightGridFadeInAnimation {
+/* - (void)performLowerRightGridFadeInAnimation {
     CGRect secondDotFrame = self.secondDotImageView.frame;
     [self.secondDotImageView setFrame:CGRectMake(secondDotFrame.origin.x + secondDotFrame.size.width / 2, secondDotFrame.origin.y + secondDotFrame.size.height / 2, 1, 1)];
     [UIView animateWithDuration:kExpandSecondDotAnimationTime animations:^{
@@ -215,13 +221,14 @@
     } completion:^(BOOL finished) {
         if (finished) {
             NSLog(@"Finished Headphone slide out");
-            [self performSecondDotFadeOut];
+            [self fadeInHand];
+            //[self performSecondDotFadeOut];
         }
     }];
-}
+} */
 
-- (void)performSecondDotFadeOut {
-    // Also Switch the grid to fade to the middle 9 dots faded out.
+// Skipping the fade animation!
+/*- (void)performSecondDotFadeOut {
     
     [UIView animateWithDuration:kFadeSecondDotAnimationTime animations:^{
         [self.secondDotImageView setAlpha:0.0f];
@@ -231,15 +238,51 @@
             [self fadeInHand];
         }
     }];
+} */
+
+- (void)fadeInFinalBackground {
+    CGRect firstBackFrame = self.firstBackgroundImageView.frame;
+    [self.firstBackgroundImageView setFrame:CGRectMake(-firstBackFrame.size.width, firstBackFrame.origin.y, firstBackFrame.size.width, firstBackFrame.size.height)];
+    CGRect secondBackFrame = self.secondBackgroundImageView.frame;
+    [UIView animateWithDuration:kExpandAnimationTime animations:^{
+        [self.firstBackgroundImageView setFrame:CGRectMake(0, firstBackFrame.origin.y, firstBackFrame.size.width, firstBackFrame.size.height)];
+        [self.secondBackgroundImageView setFrame:CGRectMake(secondBackFrame.origin.x + secondBackFrame.size.width, secondBackFrame.origin.y, secondBackFrame.size.width, secondBackFrame.size.height)];
+        [self.sixthScreenGrid setAlpha:1.0f];
+        //[self.fourthGridControllerImageView setAlpha:0.0f];
+        //[self.movementArrowsImageView setAlpha:1.0f];
+        //[self.secondDotImageView setImage:[UIImage imageNamed:@"1st screen - lit dot"]];
+    } completion:^(BOOL finished){
+        if (finished) {
+            NSLog(@"Final Background Faded in");
+            //[self fadeInSixthScreenWords];
+            
+            // Start the video from the beginning!
+            [self sendJsonDictionaryWithType:[[NSMutableDictionary alloc] initWithObjectsAndKeys:
+                                              @(0), kUsbParamIndex,
+                                              nil]
+                                        type:kUsbTypeVideoChange];
+            [self fadeInHand];
+        }
+    }];
 }
 
 - (void)fadeInHand {
+    [self.secondDotImageView setImage:[UIImage imageNamed:@"1st screen - lit dot"]];
+    CGRect secondDotFrame = self.secondDotImageView.frame;
+    [self.secondDotImageView setFrame:CGRectMake(secondDotFrame.origin.x + secondDotFrame.size.width / 2, secondDotFrame.origin.y + secondDotFrame.size.height / 2, 1, 1)];
+    
     CGRect finalHandFrame = self.fifthHandImageView.frame;
     [self.fifthHandImageView setFrame:CGRectMake(finalHandFrame.origin.x, finalHandFrame.origin.y - kHandSlideAnimationDistance, finalHandFrame.size.width, finalHandFrame.size.height)];
     
     CGRect finalHoldAndDragLabelFrame = self.holdAndDragLabel.frame;
     [self.holdAndDragLabel setFrame:CGRectMake(finalHoldAndDragLabelFrame.origin.x, finalHoldAndDragLabelFrame.origin.y - kHandSlideAnimationDistance, finalHoldAndDragLabelFrame.size.width, finalHoldAndDragLabelFrame.size.height)];
+    
     [UIView animateWithDuration:kHandSlideAnimationDuration animations:^{
+        //[self.fourthGridControllerImageView setAlpha:0.0f];
+        
+        [self.secondDotImageView setAlpha:1.0f];
+        [self.secondDotImageView setFrame:secondDotFrame];
+        
         [self.fifthHandImageView setAlpha:1.0f];
         [self.fifthHandImageView setFrame:finalHandFrame];
         
@@ -247,6 +290,7 @@
         [self.holdAndDragLabel setFrame:finalHoldAndDragLabelFrame];
     } completion:^(BOOL finished) {
         if (finished) {
+            self.movementAllowed = true;
             NSLog(@"Hand slide in Animation finished");
             dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kTimeBetweenHandSlideInAndOut * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                 [self fadeOutHand];
@@ -267,33 +311,27 @@
     } completion:^(BOOL finished) {
         if (finished) {
             NSLog(@"Hand fade out Animation Finished.");
-            [self fadeInFinalBackground];
+            //[self fadeInFinalBackground];
+            [self fadeInSixthScreenWords];
         }
     }];
 }
 
-- (void)fadeInFinalBackground {
-    CGRect firstBackFrame = self.firstBackgroundImageView.frame;
-    [self.firstBackgroundImageView setFrame:CGRectMake(-firstBackFrame.size.width, firstBackFrame.origin.y, firstBackFrame.size.width, firstBackFrame.size.height)];
-    CGRect secondBackFrame = self.secondBackgroundImageView.frame;
-    [UIView animateWithDuration:kExpandAnimationTime animations:^{
-        [self.firstBackgroundImageView setFrame:CGRectMake(0, firstBackFrame.origin.y, firstBackFrame.size.width, firstBackFrame.size.height)];
-        [self.secondBackgroundImageView setFrame:CGRectMake(secondBackFrame.origin.x + secondBackFrame.size.width, secondBackFrame.origin.y, secondBackFrame.size.width, secondBackFrame.size.height)];
-        [self.sixthScreenGrid setAlpha:1.0f];
-        [self.fourthGridControllerImageView setAlpha:0.0f];
-    } completion:^(BOOL finished){
+//[self.fourthGridControllerImageView setAlpha:1.0f];
+
+/* - (void)fadeInJoystickAndGrid {
+    [UIView animateWithDuration:6.0 animations:^{
+        //[self.sixthScreenGrid setImage:[UIImage imageNamed:@"6th screen - grid"]];
+        //[self.sixthScreenGrid ]
+    } completion:^(BOOL finished) {
         if (finished) {
-            NSLog(@"Final Background Faded in");
-            [self fadeInSixthScreenWords];
-            
-            // Start the video from the beginning!
-            [self sendJsonDictionaryWithType:[[NSMutableDictionary alloc] initWithObjectsAndKeys:
-                                              @(0), kUsbParamIndex,
-                                              nil]
-                                        type:kUsbTypeVideoChange];
+            NSLog(@"Finished fadeInJoystickAndGrid");
+            //[self showSixthScreenDot];
+            //[self fa
+ deInSixthScreenWords];
         }
     }];
-}
+} */
 
 - (void)fadeInSixthScreenWords {
     CGRect sixthScreenLabelFinalFrame = self.sixthScreenLabel.frame;
@@ -301,6 +339,9 @@
     
     CGRect signupImageViewFinalFrame = self.signupBackgroundImageView.frame;
     [self.signupBackgroundImageView setFrame:CGRectMake(signupImageViewFinalFrame.origin.x, signupImageViewFinalFrame.origin.y - kSixthScreenLabelSlideAnimationDistance, signupImageViewFinalFrame.size.width, signupImageViewFinalFrame.size.height)];
+    
+    CGRect signupArrowImageFinalFrame = self.signupRightArrowImageView.frame;
+    [self.signupRightArrowImageView setFrame:CGRectMake(signupArrowImageFinalFrame.origin.x, signupArrowImageFinalFrame.origin.y - kSixthScreenLabelSlideAnimationDistance, signupArrowImageFinalFrame.size.width, signupArrowImageFinalFrame.size.height)];
     
     CGRect signupArrowLabelFinalFrame = self.signupArrowLabel.frame;
     [self.signupArrowLabel setFrame:CGRectMake(signupArrowLabelFinalFrame.origin.x, signupArrowLabelFinalFrame.origin.y - kSixthScreenLabelSlideAnimationDistance, signupArrowLabelFinalFrame.size.width, signupArrowLabelFinalFrame.size.height)];
@@ -320,25 +361,17 @@
         
         [self.signupInUnderLabel setAlpha:1.0f];
         [self.signupInUnderLabel setFrame:signupInUnderFinalFrame];
+        
+        [self.signupRightArrowImageView setAlpha:1.0f];
+        [self.signupRightArrowImageView setFrame:signupArrowImageFinalFrame];
+        
+        [self.fourthGridControllerImageView setAlpha:1.0f];
+        [self.movementArrowsImageView setAlpha:1.0f];
     } completion:^(BOOL finished) {
         if (finished) {
             NSLog(@"Sixth Screen Label Slide Finished");
-            [self showSixthScreenDot];
-        }
-    }];
-}
-
-- (void)showSixthScreenDot {
-    [self.secondDotImageView setImage:[UIImage imageNamed:@"1st screen - lit dot"]];
-    CGRect secondDotFrame = self.secondDotImageView.frame;
-    [self.secondDotImageView setFrame:CGRectMake(secondDotFrame.origin.x + secondDotFrame.size.width / 2, secondDotFrame.origin.y + secondDotFrame.size.height / 2, 1, 1)];
-    [UIView animateWithDuration:kExpandSecondDotAnimationTime animations:^{
-        [self.secondDotImageView setAlpha:1.0f];
-        [self.secondDotImageView setFrame:secondDotFrame];
-    } completion:^(BOOL finished) {
-        if (finished) {
-            NSLog(@"Finished sixth screen dot animation");
             self.animationCompleted = true;
+            //[self showSixthScreenDot];
         }
     }];
 }
@@ -356,22 +389,24 @@
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if (!self.animationCompleted) {
+    if (!self.movementAllowed) {
         return;
     }
+    [self.secondDotImageView setFrame:self.initialMovementDotFrame];
     [self sendJsonDictionaryWithType:[NSMutableDictionary new] type:kUsbTypeVrTouchEnd];
     //NSLog(@"touchesEnded");
 }
 
 - (void)touchesCancelled:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    if (!self.animationCompleted) {
+    if (!self.movementAllowed) {
         return;
     }
+    [self.secondDotImageView setFrame:self.initialMovementDotFrame];
     [self sendJsonDictionaryWithType:[NSMutableDictionary new] type:kUsbTypeVrTouchEnd];
 }
 
 - (void)handleTouch:(UIEvent *)event start:(bool)start {
-    if (!self.animationCompleted) {
+    if (!self.movementAllowed) {
         return;
     }
     UITouch *touch = [[event allTouches] anyObject];
@@ -392,6 +427,8 @@
                                  @(percentOfHeight), kUsbParamYCoordinate,
                                  nil];
     
+    // set the frame of the movement!
+    [self.secondDotImageView setFrame:CGRectMake(self.initialMovementDotFrame.origin.x + (kJoystickMaxVerticalDistanceFromCenter * percentOfWidth / 100.0), self.initialMovementDotFrame.origin.y + (kJoystickMaxVerticalDistanceFromCenter * percentOfHeight / -100.0), self.initialMovementDotFrame.size.width, self.initialMovementDotFrame.size.height)];
     [self sendJsonDictionaryWithType:dict type:(start ? kUsbTypeVrTouchStart : kUsbTypeVrTouch)];
 }
 
@@ -433,7 +470,6 @@
     }
     [super viewDidUnload];
 }
-
 
 - (void)sendMessage:(NSString*)message {
     if (peerChannel_) {
