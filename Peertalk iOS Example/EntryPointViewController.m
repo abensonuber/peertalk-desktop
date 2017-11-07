@@ -552,6 +552,25 @@
         PTExampleTextFrame *textFrame = (PTExampleTextFrame*)payload.data;
         textFrame->length = ntohl(textFrame->length);
         NSString *message = [[NSString alloc] initWithBytes:textFrame->utf8text length:textFrame->length encoding:NSUTF8StringEncoding];
+        NSLog([NSString stringWithFormat:@"Received message: %@", message]);
+
+        NSError *error;
+        NSData *data = [message dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+        if (!json || error) {
+            NSLog(@"Failed to convert message into json!");
+            return;
+        }
+        
+        if (![json objectForKey:@"type"]) {
+            NSLog(@"Received message does not contain 'type'");
+            return;
+        }
+        
+        if ([@"ping" caseInsensitiveCompare:[json objectForKey:@"type"]] == NSOrderedSame) {
+            NSLog(@"Received Ping!!!");
+            [self sendJsonDictionaryWithType:[NSMutableDictionary new] type:@"pong"];
+        }
         //[self appendOutputMessage:[NSString stringWithFormat:@"[%@]: %@", channel.userInfo, message]];
     } else if (type == PTExampleFrameTypePing && peerChannel_) {
         [peerChannel_ sendFrameOfType:PTExampleFrameTypePong tag:tag withPayload:nil callback:nil];
@@ -584,7 +603,7 @@
     [self appendOutputMessage:[NSString stringWithFormat:@"Connected to %@", address]];
     
     // Send some information about ourselves to the other end
-    [self sendDeviceInfo];
+    // [self sendDeviceInfo];
 }
 
 /*
