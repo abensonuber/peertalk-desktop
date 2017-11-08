@@ -81,6 +81,11 @@
 		C8B6294F1FA9528C007BF6EA /* ClanProForUBER-ThinNarrow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C8B629251FA949DE007BF6EA /* ClanProForUBER-ThinNarrow.ttf */; };
 		C8B629511FA98490007BF6EA /* 1st Grid Dark Dots.png in Resources */ = {isa = PBXBuildFile; fileRef = C8B629501FA98490007BF6EA /* 1st Grid Dark Dots.png */; };
 		C8B629531FA9ADE8007BF6EA /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B629521FA9ADE8007BF6EA /* Constants.m */; };
+		C8CFB3651FB26D4F0009FDD7 /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = C8CFB3621FB26D4E0009FDD7 /* arrows.png */; };
+		C8CFB3661FB26D4F0009FDD7 /* grid.png in Resources */ = {isa = PBXBuildFile; fileRef = C8CFB3631FB26D4F0009FDD7 /* grid.png */; };
+		C8CFB3671FB26D4F0009FDD7 /* joystick.png in Resources */ = {isa = PBXBuildFile; fileRef = C8CFB3641FB26D4F0009FDD7 /* joystick.png */; };
+		C8CFB3691FB276590009FDD7 /* joystickV2.png in Resources */ = {isa = PBXBuildFile; fileRef = C8CFB3681FB276590009FDD7 /* joystickV2.png */; };
+		C8CFB36B1FB29DDA0009FDD7 /* grid2.png in Resources */ = {isa = PBXBuildFile; fileRef = C8CFB36A1FB29DDA0009FDD7 /* grid2.png */; };
 		EE158A761CBD3FF800A3E3F0 /* PTChannel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACFD2D4151D36220081ACF5 /* PTChannel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE158A771CBD3FF800A3E3F0 /* PTProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A88FA5C150D61DE00FC3647 /* PTProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE158A781CBD3FF800A3E3F0 /* PTUSBHub.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A88FA5E150D61DE00FC3647 /* PTUSBHub.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -205,6 +210,11 @@
 		C8B629501FA98490007BF6EA /* 1st Grid Dark Dots.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1st Grid Dark Dots.png"; sourceTree = "<group>"; };
 		C8B629521FA9ADE8007BF6EA /* Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		C8B629541FA9ADEF007BF6EA /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		C8CFB3621FB26D4E0009FDD7 /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrows.png; sourceTree = "<group>"; };
+		C8CFB3631FB26D4F0009FDD7 /* grid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid.png; sourceTree = "<group>"; };
+		C8CFB3641FB26D4F0009FDD7 /* joystick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystick.png; sourceTree = "<group>"; };
+		C8CFB3681FB276590009FDD7 /* joystickV2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = joystickV2.png; sourceTree = "<group>"; };
+		C8CFB36A1FB29DDA0009FDD7 /* grid2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grid2.png; sourceTree = "<group>"; };
 		EE158A5B1CBD3EB600A3E3F0 /* Peertalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Peertalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE158A681CBD3ED700A3E3F0 /* Peertalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Peertalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE158A7C1CBD402600A3E3F0 /* Peertalk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Peertalk.h; sourceTree = "<group>"; };
@@ -438,6 +448,11 @@
 		C8B6292F1FA94BD6007BF6EA /* images */ = {
 			isa = PBXGroup;
 			children = (
+				C8CFB36A1FB29DDA0009FDD7 /* grid2.png */,
+				C8CFB3621FB26D4E0009FDD7 /* arrows.png */,
+				C8CFB3631FB26D4F0009FDD7 /* grid.png */,
+				C8CFB3641FB26D4F0009FDD7 /* joystick.png */,
+				C8CFB3681FB276590009FDD7 /* joystickV2.png */,
 				C84FA2E11FAA9475001DEF0A /* white_hand.png */,
 				C84FA2DB1FAA840B001DEF0A /* 6th+screen+-+grid.png */,
 				C84FA2D91FAA7F53001DEF0A /* opaic_grid.png */,
@@ -688,9 +703,12 @@
 				C84FA2E21FAA9475001DEF0A /* white_hand.png in Resources */,
 				C8B629471FA9528C007BF6EA /* ClanProForUBER-MediumNarrow.ttf in Resources */,
 				C8B629481FA9528C007BF6EA /* ClanProForUBER-News.otf in Resources */,
+				C8CFB3661FB26D4F0009FDD7 /* grid.png in Resources */,
 				C8B629491FA9528C007BF6EA /* ClanProForUBER-News.ttf in Resources */,
+				C8CFB3671FB26D4F0009FDD7 /* joystick.png in Resources */,
 				C8B6294A1FA9528C007BF6EA /* ClanProForUBER-NewsNarrow.otf in Resources */,
 				C8B6294B1FA9528C007BF6EA /* ClanProForUBER-NewsNarrow.ttf in Resources */,
+				C8CFB36B1FB29DDA0009FDD7 /* grid2.png in Resources */,
 				C84FA2D21FAA66D3001DEF0A /* group2.png in Resources */,
 				C8B6294C1FA9528C007BF6EA /* ClanProForUBER-Thin.otf in Resources */,
 				C8B6294D1FA9528C007BF6EA /* ClanProForUBER-Thin.ttf in Resources */,
@@ -710,6 +728,7 @@
 				C84FA2D81FAA68E1001DEF0A /* rightArrow@3x.png in Resources */,
 				C84FA2D71FAA68E1001DEF0A /* rightArrow@2x.png in Resources */,
 				6A2E8E371527451D001B90E4 /* Icon-144@2x.png in Resources */,
+				C8CFB3651FB26D4F0009FDD7 /* arrows.png in Resources */,
 				C84FA2E01FAA90EC001DEF0A /* lower_grid_for_last_screen.png in Resources */,
 				6A2E8E39152745EF001B90E4 /* Icon-72.png in Resources */,
 				6A2E8E3B1527467E001B90E4 /* Icon-114@2x.png in Resources */,
@@ -717,6 +736,7 @@
 				C84FA2DE1FAA8455001DEF0A /* 6th screen - grid.png in Resources */,
 				C84FA2DC1FAA840B001DEF0A /* 6th+screen+-+grid.png in Resources */,
 				C8B6293D1FA94BDF007BF6EA /* 2nd screen - grid expanded.png in Resources */,
+				C8CFB3691FB276590009FDD7 /* joystickV2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

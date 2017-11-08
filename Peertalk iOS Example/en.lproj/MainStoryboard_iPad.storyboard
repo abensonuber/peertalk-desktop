@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="0vx-6e-JK2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" colorMatched="YES" initialViewController="0vx-6e-JK2">
     <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -83,109 +82,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="5wj-09-F1q">
-                                <rect key="frame" x="-1024" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="q2T-MN-dmr">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1st screen - grid.png" id="Fas-89-xJb">
-                                <rect key="frame" x="48.5" y="74.5" width="926.5" height="619"/>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="grid2.png" id="Fas-89-xJb">
+                                <rect key="frame" x="27" y="12" width="970" height="740"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Uber 360 Experiences" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8Yb-tz-UN9">
-                                <rect key="frame" x="102.5" y="265" width="490.5" height="57"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="TAP TO GET STARTED" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0dp-P7-dT6">
-                                <rect key="frame" x="102.5" y="330" width="143" height="15.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1st screen - lit dot.png" id="bv4-iI-DtI">
-                                <rect key="frame" x="695" y="536.5" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2nd screen - grid expanded.png" id="kOf-fU-b9y">
-                                <rect key="frame" x="36" y="24.5" width="950" height="719"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="3rd screen - headphones.png" id="Rep-tS-Gqa">
-                                <rect key="frame" x="478" y="250.5" width="67.5" height="67.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please put on the headphones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Jxc-SC-o2I">
-                                <rect key="frame" x="339" y="341" width="346" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
-                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="4th screen - lit dot.png" id="N6c-6H-vLi">
-                                <rect key="frame" x="658" y="568" width="64" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lower_grid_for_last_screen.png" id="EDK-3q-pEj">
-                                <rect key="frame" x="401" y="423" width="578" height="356"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="joystick.png" id="N6c-6H-vLi">
+                                <rect key="frame" x="445" y="314" width="135" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="white_hand.png" id="gA0-kt-JRk">
-                                <rect key="frame" x="648" y="642" width="71" height="67.5"/>
+                                <rect key="frame" x="477" y="542" width="71" height="67.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hold and drag to rotate the video" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nSU-jJ-3lV">
-                                <rect key="frame" x="504" y="708" width="380" height="59"/>
+                                <rect key="frame" x="332" y="608" width="380" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="opaic_grid.png" id="ifl-I0-Ade">
-                                <rect key="frame" x="20" y="24" width="982" height="722"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="DRAG ME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="7x6-A6-bHZ">
+                                <rect key="frame" x="0.0" y="538" width="1024" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="The Driver Experience" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8o8-Cc-YzU">
-                                <rect key="frame" x="112.5" y="170" width="583" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="F6o-Tr-SEs">
-                                <rect key="frame" x="657" y="293" width="182" height="182"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="F6o-Tr-SEs">
+                                <rect key="frame" x="709" y="453" width="255" height="255"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sign up in under 2 minutes" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lQQ-Ew-7di">
-                                <rect key="frame" x="679.5" y="315" width="130.5" height="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Drive in your city. Earn $400." lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lQQ-Ew-7di">
+                                <rect key="frame" x="740.5" y="484" width="183" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b9X-aJ-9TK">
-                                <rect key="frame" x="719" y="432" width="62.5" height="20.5"/>
+                                <rect key="frame" x="796" y="648" width="87" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="group2.png" id="Dzf-91-9c9">
-                                <rect key="frame" x="636" y="544.5" width="110" height="108"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="arrows.png" id="Dzf-91-9c9">
+                                <rect key="frame" x="380" y="246.5" width="264" height="264"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="rightArrow.png" id="Ogu-eY-Qsz">
-                                <rect key="frame" x="799" y="437" width="17.5" height="11"/>
+                                <rect key="frame" x="908" y="654.5" width="24.5" height="15.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -193,26 +146,17 @@
                         <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="driverExperienceLabel" destination="8Yb-tz-UN9" id="SCn-fH-59b"/>
+                        <outlet property="dragMeLabel" destination="7x6-A6-bHZ" id="OdD-Kn-xVL"/>
                         <outlet property="fifthHandImageView" destination="gA0-kt-JRk" id="a0V-Lf-imI"/>
                         <outlet property="firstBackgroundImageView" destination="q2T-MN-dmr" id="kNq-Kc-xSK"/>
-                        <outlet property="firstDotImageView" destination="bv4-iI-DtI" id="ohB-P6-qy6"/>
-                        <outlet property="fourthGridControllerImageView" destination="EDK-3q-pEj" id="LkT-I8-veW"/>
                         <outlet property="gridImageView" destination="Fas-89-xJb" id="guG-tA-zTP"/>
-                        <outlet property="headphonesImageView" destination="Rep-tS-Gqa" id="UsN-P1-HmK"/>
-                        <outlet property="headphonesLabel" destination="Jxc-SC-o2I" id="VBh-NU-Uya"/>
                         <outlet property="holdAndDragLabel" destination="nSU-jJ-3lV" id="5Gj-a7-CM7"/>
                         <outlet property="movementArrowsImageView" destination="Dzf-91-9c9" id="6br-sM-lwD"/>
-                        <outlet property="secondBackgroundImageView" destination="5wj-09-F1q" id="Tyr-qT-mu4"/>
                         <outlet property="secondDotImageView" destination="N6c-6H-vLi" id="XoG-Cg-uxH"/>
-                        <outlet property="secondGridImageView" destination="kOf-fU-b9y" id="tVg-Ww-GDg"/>
                         <outlet property="signupArrowLabel" destination="b9X-aJ-9TK" id="4pB-Le-oNs"/>
                         <outlet property="signupBackgroundImageView" destination="F6o-Tr-SEs" id="Kpq-Hy-tkp"/>
                         <outlet property="signupInUnderLabel" destination="lQQ-Ew-7di" id="tcw-Se-bLu"/>
                         <outlet property="signupRightArrowImageView" destination="Ogu-eY-Qsz" id="NNp-lb-1Zi"/>
-                        <outlet property="sixthScreenGrid" destination="ifl-I0-Ade" id="73x-Ut-vpp"/>
-                        <outlet property="sixthScreenLabel" destination="8o8-Cc-YzU" id="qYw-vu-T9u"/>
-                        <outlet property="tapToGetStartedLabel" destination="0dp-P7-dT6" id="eal-P8-tSx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Y9-2D-GXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -220,14 +164,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1st screen - grid.png" width="1853" height="1238"/>
-        <image name="1st screen - lit dot.png" width="132" height="132"/>
-        <image name="2nd screen - grid expanded.png" width="1867" height="1438"/>
-        <image name="3rd screen - headphones.png" width="136" height="135"/>
-        <image name="4th screen - lit dot.png" width="132" height="132"/>
-        <image name="group2.png" width="129" height="127"/>
-        <image name="lower_grid_for_last_screen.png" width="1152" height="580"/>
-        <image name="opaic_grid.png" width="1867" height="1438"/>
+        <image name="arrows.png" width="540" height="538"/>
+        <image name="grid2.png" width="1940" height="1460"/>
+        <image name="joystick.png" width="294" height="294"/>
         <image name="rightArrow.png" width="17" height="11"/>
         <image name="white_hand.png" width="135" height="135"/>
     </resources>

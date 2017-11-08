@@ -7,6 +7,8 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *const kJsonFieldType;
+
 extern NSString *const kUsbTypeVrTouchEnd;
 extern NSString *const kUsbTypeVrTouchStart;
 extern NSString *const kUsbTypeVrTouch;
@@ -23,3 +25,8 @@ extern NSString *const kUsbTypeVideoSeek;
 
 extern NSString *const kUsbTypeVideoChange;
 extern NSString *const kUsbParamIndex;
+
+extern NSString *const kUsbTypePing;
+extern NSString *const kUsbTypePong;
+
+extern NSString *const kUsbTypeVideoReset;
